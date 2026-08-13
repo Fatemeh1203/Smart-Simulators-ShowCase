@@ -135,20 +135,9 @@
 | `simulator-src/` | سورس‌کد شبیه‌ساز — Simulator source code |
 | `docs/screenshots/` | تصاویر همین راهنما — Images used in this README |
 
----
+پروژه با `vite-plugin-singlefile` ساخته می‌شود، بنابراین خروجی یک فایل HTML خودکفاست که همهٔ CSS و JavaScript داخل آن جاسازی شده است.
 
-## 🛠️ ساخت از روی سورس &nbsp;|&nbsp; Build from Source
-
-```bash
-cd simulator-src
-npm install
-npm run build
-cp dist/index.html ../lab/index.html
-```
-
-پروژه با `vite-plugin-singlefile` ساخته می‌شود، بنابراین خروجی **یک فایل HTML خودکفا** است که همهٔ CSS و JavaScript داخلش جاسازی شده — بدون هیچ فایل جانبی، آمادهٔ میزبانی روی GitHub Pages.
-
-*The project builds through `vite-plugin-singlefile`, so the output is **one self-contained HTML file** with all CSS and JavaScript inlined — no side files, ready to host on GitHub Pages.*
+*Built through `vite-plugin-singlefile`, so the output is one self-contained HTML file with all CSS and JavaScript inlined.*
 
 ---
 
