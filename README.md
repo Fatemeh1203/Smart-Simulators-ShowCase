@@ -60,16 +60,6 @@
 | `LICENSE` | مجوز استفاده |
 
 ---
-
-## ساخت مجدد از روی سورس
-
-```bash
-cd simulator-src
-npm install
-npm run build
-cp dist/index.html ../lab/index.html
-```
-
 پروژه با `vite-plugin-singlefile` ساخته می‌شود، بنابراین خروجی یک فایل HTML خودکفاست که همهٔ CSS و JavaScript داخل آن جاسازی شده است.
 
 ---
