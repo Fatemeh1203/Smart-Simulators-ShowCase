@@ -41,16 +41,6 @@
 
 ---
 
-## فعال‌سازی GitHub Pages
-
-برای اینکه لینک‌های بالا کار کنند، یک بار باید GitHub Pages روشن شود:
-
-**Settings → Pages → Build and deployment → Source: _Deploy from a branch_ → Branch: `main` / `(root)` → Save**
-
-چند دقیقه بعد، آدرس `https://fatemeh1203.github.io/Smart-Simulators-ShowCase/` فعال می‌شود.
-
----
-
 ## English
 
 This repository is a showcase for the **Smart Simulators** project. It contains no simulation
