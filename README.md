@@ -2,51 +2,129 @@
 
 # 🔬 Smart Simulators ShowCase
 
-### Interactive Virtual Math Lab — Grade 4
-### آزمایشگاه مجازی و شبیه‌ساز تعاملی ریاضی چهارم دبستان
+### Interactive educational simulators that run entirely in your browser
+### شبیه‌سازهای تعاملی آموزشی که کاملاً در مرورگر اجرا می‌شوند
 
 <p>
 <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black">
 <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
-<img alt="Vite" src="https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+<img alt="Python" src="https://img.shields.io/badge/Python-Pyodide-3776AB?style=for-the-badge&logo=python&logoColor=white">
 <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind-4-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white">
 </p>
 
 <h3>
 
-[**▶️  &nbsp; Launch the Simulator &nbsp; · &nbsp; ورود به شبیه‌ساز &nbsp; 🚀**](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/)
+[**▶️  &nbsp; Open the ShowCase &nbsp; · &nbsp; ورود به ویترین &nbsp; 🚀**](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/)
 
 </h3>
 
-<p><i>Runs entirely in your browser — no install, no signup, no download.<br>
-کاملاً در مرورگر اجرا می‌شود — بدون نصب، بدون ثبت‌نام، بدون دانلود.</i></p>
-
-<img src="docs/screenshots/01-dashboard.png" alt="Dashboard" width="100%">
+<p><i>No install, no signup, no download.<br>
+بدون نصب، بدون ثبت‌نام، بدون دانلود.</i></p>
 
 </div>
 
 ---
 
-## 🚀 چطور وارد شبیه‌ساز شوم؟ &nbsp;|&nbsp; How do I open it?
+## 🎮 شبیه‌سازها &nbsp;|&nbsp; The Simulators
 
 <div align="center">
 
-| | لینک &nbsp;/&nbsp; Link |
-|:--|:--|
-| 🏠 **صفحهٔ ویترین** — روی دکمهٔ **«ورود به شبیه‌ساز»** کلیک کنید<br>**Showcase page** — click the **Enter Simulator** button | **https://fatemeh1203.github.io/Smart-Simulators-ShowCase/** |
-| 🔬 **مستقیم به آزمایشگاه** — یک‌مرحله‌ای، بدون واسطه<br>**Straight to the lab** — one step, no landing page | **https://fatemeh1203.github.io/Smart-Simulators-ShowCase/lab/** |
+| | شبیه‌ساز &nbsp;/&nbsp; Simulator | لینک ورود &nbsp;/&nbsp; Entry link |
+|:-:|:--|:--|
+| 🔬 | **آزمایشگاه مجازی ریاضی** — چهارم دبستان<br>**Virtual Math Lab** — Grade 4 | **[/lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/lab/)** |
+| 🐍 | **آموزش تعاملی پایتون** — مقدماتی<br>**Interactive Python Course** — beginner | **[/python-lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-lab/)** |
 
 </div>
 
-> **فارسی:** روی لینک اول کلیک کنید، سپس دکمهٔ آبی **«ورود به شبیه‌ساز»** را بزنید تا آزمایشگاه مجازی باز شود.
-> اگر می‌خواهید یک‌راست وارد خود شبیه‌ساز شوید، لینک دوم را باز کنید.
+> **فارسی:** ابتدا [صفحهٔ ویترین](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/) را باز کنید، سپس روی دکمهٔ شبیه‌ساز دلخواه کلیک کنید.
+> یا با لینک‌های جدول بالا مستقیم وارد همان شبیه‌ساز شوید.
 >
-> **English:** Click the first link, then press the blue **«ورود به شبیه‌ساز»** (Enter Simulator) button.
-> The second link takes you straight into the lab.
+> **English:** Open the [showcase page](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/) and press the button for the simulator you want,
+> or use the links in the table above to jump straight in.
 
 ---
 
-## 📸 نمایش تصویری &nbsp;|&nbsp; Visual Tour
+# 🐍 آموزش تعاملی پایتون &nbsp;|&nbsp; Interactive Python
+
+<div align="center">
+
+### 👉 [https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-lab/)
+
+<img src="docs/screenshots/py-01-home.png" alt="Python course home" width="100%">
+
+</div>
+
+**فارسی:** یک دورهٔ کامل پایتون مقدماتی در ۱۴ مبحث. هر مبحث آموزش، مثال‌های اجراشدنی و آزمون ۱۰ سؤالی دارد.
+کد پایتون **واقعاً** در مرورگر اجرا می‌شود — نه شبیه‌سازی متنی، بلکه مفسر واقعی پایتون روی WebAssembly (Pyodide).
+
+**English:** A complete beginner Python course in 14 topics. Every topic has a lesson, runnable examples and a ten-question quiz.
+The Python code **really runs** in your browser — a genuine CPython interpreter on WebAssembly (Pyodide), not a text simulation.
+
+<div align="center">
+
+<table>
+<tr>
+<td width="50%">
+<img src="docs/screenshots/py-02-lesson.png" alt="Lesson view" width="100%"><br>
+<b>Lesson — key points, syntax, worked notes</b><br>
+<sub>آموزش — نکات کلیدی، سینتکس و توضیح</sub>
+</td>
+<td width="50%">
+<img src="docs/screenshots/py-03-editor.png" alt="Code editor" width="100%"><br>
+<b>Editable code, real output, answer checking</b><br>
+<sub>کد قابل ویرایش، خروجی واقعی و بررسی پاسخ</sub>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<img src="docs/screenshots/py-04-quiz.png" alt="Quiz" width="100%"><br>
+<b>Ten-question quiz per topic</b><br>
+<sub>آزمون ۱۰ سؤالی برای هر مبحث</sub>
+</td>
+<td width="50%">
+<img src="docs/screenshots/py-05-dashboard.png" alt="Dashboard" width="100%"><br>
+<b>Progress dashboard with saved results</b><br>
+<sub>کارنامه با نتایج ذخیره‌شده</sub>
+</td>
+</tr>
+</table>
+
+</div>
+
+### 📚 مباحث &nbsp;|&nbsp; Topics
+
+| # | English | فارسی |
+|:-:|:--|:--|
+| ۱ | `print` and output | تابع print و چاپ خروجی |
+| ۲ | Variables | متغیرها (Variable) |
+| ۳ | Strings | رشته‌ها (str) |
+| ۴ | Integers | اعداد صحیح (int) |
+| ۵ | Type conversion | تبدیل نوع (Type Conversion) |
+| ۶ | `input` — reading user input | تابع input - گرفتن ورودی |
+| ۷ | Math operators and the `math` library | عملگرهای ریاضی و کتابخانه math |
+| ۸ | `if` / `elif` / `else` | عبارت شرطی if / elif / else |
+| ۹ | `while` loops | حلقه while |
+| ۱۰ | `for` loops and `range` | حلقه for و range |
+| ۱۱ | `len` and `range` | تابع len و range |
+| ۱۲ | `continue` and `break` | continue و break |
+| ۱۳ | Lists | لیست (List) |
+| ۱۴ | Lists with loops and conditions | ترکیب لیست با حلقه و شرط |
+
+---
+
+# 🔬 آزمایشگاه مجازی ریاضی &nbsp;|&nbsp; Virtual Math Lab
+
+<div align="center">
+
+### 👉 [https://fatemeh1203.github.io/Smart-Simulators-ShowCase/lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/lab/)
+
+<img src="docs/screenshots/01-dashboard.png" alt="Math lab dashboard" width="100%">
+
+</div>
+
+**فارسی:** آزمایشگاه تعاملی ریاضی چهارم دبستان در هفت فصل، با شبیه‌ساز عملی، اهداف یادگیری، آزمون و کارنامهٔ توصیفی قابل چاپ.
+
+**English:** An interactive math lab for fourth grade in seven chapters, with hands-on simulators, learning goals, quizzes and a printable descriptive report card.
 
 <div align="center">
 
@@ -91,24 +169,7 @@
 
 </div>
 
----
-
-## ✨ ویژگی‌ها &nbsp;|&nbsp; Features
-
-| | English | فارسی |
-|:-:|:--|:--|
-| 🧪 | **Seven interactive labs**, one per chapter of the curriculum | **هفت آزمایشگاه تعاملی**، یکی برای هر فصل کتاب درسی |
-| 🎯 | Learning goals stated up front for every chapter | اهداف یادگیری هر فصل از ابتدا مشخص است |
-| 📝 | End-of-chapter quiz with a worked explanation for each answer | آزمون پایان فصل با پاسخ تشریحی برای هر سؤال |
-| ⭐ | Star scoring, saved locally between sessions | امتیازدهی ستاره‌ای که به‌صورت محلی ذخیره می‌شود |
-| 🧾 | Descriptive report card, ready to print or save as PDF | کارنامهٔ توصیفی، آمادهٔ چاپ یا ذخیره به‌صورت PDF |
-| 🦁 | Pick your own name and avatar | انتخاب نام و آواتار دلخواه |
-| 📱 | Responsive layout — works on tablet and desktop | چیدمان واکنش‌گرا — روی تبلت و دسکتاپ کار می‌کند |
-| 🌐 | Fully right-to-left Persian interface | رابط کاربری کاملاً راست‌به‌چپ و فارسی |
-
----
-
-## 📚 فصل‌ها &nbsp;|&nbsp; Chapters
+### 📚 فصل‌ها &nbsp;|&nbsp; Chapters
 
 | # | English | فارسی |
 |:-:|:--|:--|
@@ -120,8 +181,18 @@
 | ۶ | Geometric Shapes | شکل‌های هندسی |
 | ۷ | Statistics & Probability | آمار و احتمال |
 
-هر فصل شامل شبیه‌ساز تعاملی، اهداف یادگیری، آزمون چندگزینه‌ای و امتیاز است.
-*Each chapter ships with an interactive simulator, learning goals, a quiz and a score.*
+---
+
+## ✨ ویژگی‌های مشترک &nbsp;|&nbsp; Shared Features
+
+| | English | فارسی |
+|:-:|:--|:--|
+| 🌐 | Runs fully in the browser — nothing to install | کاملاً در مرورگر اجرا می‌شود — بدون نصب |
+| 📝 | Quizzes with a worked explanation for every answer | آزمون با پاسخ تشریحی برای هر سؤال |
+| 🧾 | Progress and report cards saved on your own device | پیشرفت و کارنامه روی دستگاه خودتان ذخیره می‌شود |
+| 🔒 | No account, no server, no data leaves your browser | بدون حساب کاربری و بدون سرور؛ داده‌ای از مرورگر خارج نمی‌شود |
+| 📱 | Responsive — works on tablet and desktop | واکنش‌گرا — روی تبلت و دسکتاپ کار می‌کند |
+| ↔️ | Fully right-to-left Persian interface | رابط کاربری کاملاً راست‌به‌چپ و فارسی |
 
 ---
 
@@ -129,15 +200,16 @@
 
 | مسیر / Path | توضیح / Description |
 |:--|:--|
-| `index.html` | صفحهٔ ویترین — Landing page with the entry button |
-| `lab/index.html` | خود شبیه‌ساز، build شده و خودکفا — The built, self-contained simulator |
-| `simulator.html` | تغییر مسیر به `lab/` — Redirect kept for older links |
-| `simulator-src/` | سورس‌کد شبیه‌ساز — Simulator source code |
-| `docs/screenshots/` | تصاویر همین راهنما — Images used in this README |
+| `index.html` | صفحهٔ ویترین با دکمهٔ هر شبیه‌ساز — Showcase page linking to both simulators |
+| `lab/` | آزمایشگاه ریاضی — the math lab |
+| `python-lab/` | شبیه‌ساز پایتون — the Python course |
+| `simulator.html` | تغییر مسیر به `lab/` — redirect kept for older links |
+| `simulator-src/` | سورس آزمایشگاه ریاضی — math lab source |
+| `docs/screenshots/` | تصاویر همین راهنما — images used in this README |
 
-پروژه با `vite-plugin-singlefile` ساخته می‌شود، بنابراین خروجی یک فایل HTML خودکفاست که همهٔ CSS و JavaScript داخل آن جاسازی شده است.
+این مخزن **ویترین** پروژه‌هاست: لینک دسترسی به شبیه‌سازها آزاد و عمومی است، اما سورس‌کد شبیه‌ساز پایتون در این مخزن منتشر نشده است.
 
-*Built through `vite-plugin-singlefile`, so the output is one self-contained HTML file with all CSS and JavaScript inlined.*
+*This repository is a **showcase**: the simulators are free to open and use, but the Python simulator's source code is not published here.*
 
 ---
 

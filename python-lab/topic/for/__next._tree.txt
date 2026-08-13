@@ -1,0 +1,4 @@
+:HL["/Smart-Simulators-ShowCase/python-lab/_next/static/chunks/0f6j8f2nocae4.css","style"]
+:HL["https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css","style",{"type":"text/css"}]
+:HL["https://cdn.jsdelivr.net/gh/rastikerdar/vazir-code-font@v2.0.0/Vazir-Code-font-face.css","style",{"type":"text/css"}]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"topic","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"for","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"M-mOEDlDcz0bo2J9F7smY"}
