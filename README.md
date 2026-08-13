@@ -33,6 +33,7 @@
 |:-:|:--|:--|
 | 🔬 | **آزمایشگاه مجازی ریاضی** — چهارم دبستان<br>**Virtual Math Lab** — Grade 4 | **[/lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/lab/)** |
 | 🐍 | **آموزش تعاملی پایتون** — مقدماتی<br>**Interactive Python Course** — beginner | **[/python-lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-lab/)** |
+| 🎓 | **دورهٔ پایتون مقدماتی** — فاطمه شمس<br>**Python Basics Course** — Fatemeh Shams | **[/python-basics/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-basics/)** |
 
 </div>
 
@@ -109,6 +110,28 @@ The Python code **really runs** in your browser — a genuine CPython interprete
 | ۱۲ | `continue` and `break` | continue و break |
 | ۱۳ | Lists | لیست (List) |
 | ۱۴ | Lists with loops and conditions | ترکیب لیست با حلقه و شرط |
+
+---
+
+# 🎓 دورهٔ پایتون مقدماتی &nbsp;|&nbsp; Python Basics Course
+
+<div align="center">
+
+### 👉 [https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-basics/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-basics/)
+
+</div>
+
+**فارسی:** یک دورهٔ کامل و مستقل پایتون برای مبتدیان (پایهٔ دهم تا دوازدهم) به تدریس **فاطمه شمس**.
+شامل ۱۴ درس، ۴۲ مثال حل‌شده با خروجی، یک کارگاه کد زنده (پایتون واقعی با Pyodide)، ۱۴۰ سؤال آزمون (۱۰ سؤال برای هر درس)،
+آزمون جامع ۴۰ سؤالی، پاسخ‌نامهٔ تشریحی و کارنامهٔ قابل چاپ. زبان پیش‌فرض انگلیسی است و از نوار بالا به فارسی (کاملاً راست‌به‌چپ) تغییر می‌کند.
+
+**English:** A complete, self-contained beginner Python course (grades 10–12) taught by **Fatemeh Shams**.
+It has 14 lessons, 42 worked examples with expected output, a live code playground (real Python via Pyodide),
+140 quiz questions (10 per lesson), a 40-question random final exam, an answer key with explanations, and a printable report card.
+The default language is English, switchable to Persian (full RTL) from the top bar.
+
+> **فارسی:** درس‌ها، مثال‌ها، آزمون‌ها و کارنامه بدون اینترنت کار می‌کنند؛ فقط دکمهٔ «اجرا» بار اول برای بارگذاری موتور پایتون به اینترنت نیاز دارد.
+> **English:** Lessons, examples, quizzes and the report card work offline; only the **Run** button needs the internet once, to load the Python engine from a CDN.
 
 ---
 
@@ -200,9 +223,10 @@ The Python code **really runs** in your browser — a genuine CPython interprete
 
 | مسیر / Path | توضیح / Description |
 |:--|:--|
-| `index.html` | صفحهٔ ویترین با دکمهٔ هر شبیه‌ساز — Showcase page linking to both simulators |
+| `index.html` | صفحهٔ ویترین با دکمهٔ هر شبیه‌ساز — Showcase page linking to all simulators |
 | `lab/` | آزمایشگاه ریاضی — the math lab |
 | `python-lab/` | شبیه‌ساز پایتون — the Python course |
+| `python-basics/` | دورهٔ پایتون مقدماتی (فاطمه شمس) — the Python Basics course |
 | `simulator.html` | تغییر مسیر به `lab/` — redirect kept for older links |
 | `simulator-src/` | سورس آزمایشگاه ریاضی — math lab source |
 | `docs/screenshots/` | تصاویر همین راهنما — images used in this README |
