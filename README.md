@@ -1,7 +1,7 @@
 # Smart Simulators ShowCase
 
 شبیه‌سازی‌های تعاملی آموزشی، پژوهشی، علمی و آزمایشگاهی.
-این مخزن ویترین پروژه است: کد شبیه‌ساز اینجا نیست، فقط **لینک ورود به آزمایشگاه مجازی** در آن قرار دارد.
+شبیه‌ساز کاملاً روی GitHub Pages میزبانی می‌شود و مستقیم در مرورگر اجرا می‌شود — بدون نصب، بدون دانلود.
 
 ---
 
@@ -11,11 +11,29 @@
 
 ### 👉 https://fatemeh1203.github.io/Smart-Simulators-ShowCase/
 
-با کلیک روی این لینک وارد صفحهٔ ویترین می‌شوید. در آن صفحه دکمهٔ **«ورود به شبیه‌ساز»** را بزنید تا صفحهٔ **آزمایشگاه مجازی** باز شود و شبیه‌ساز مستقیماً اجرا شود.
+با کلیک روی این لینک وارد صفحهٔ ویترین می‌شوید. در آن صفحه دکمهٔ **«ورود به شبیه‌ساز»** را بزنید تا **آزمایشگاه مجازی** باز شود.
 
-اگر می‌خواهید یک‌مرحله‌ای وارد خود آزمایشگاه مجازی شوید، این لینک را باز کنید:
+اگر می‌خواهید یک‌مرحله‌ای و مستقیم وارد خود آزمایشگاه مجازی شوید، این لینک را باز کنید:
 
-### 👉 https://fatemeh1203.github.io/Smart-Simulators-ShowCase/simulator.html
+### 👉 https://fatemeh1203.github.io/Smart-Simulators-ShowCase/lab/
+
+---
+
+## دربارهٔ شبیه‌ساز
+
+**آزمایشگاه مجازی ریاضی کلاس چهارم دبستان** — یک محیط تعاملی برای یادگیری و تمرین، شامل هفت فصل:
+
+| فصل | موضوع |
+| --- | --- |
+| ۱ | اعداد و الگوها |
+| ۲ | کسرها |
+| ۳ | ضرب و تقسیم |
+| ۴ | زاویه و زمان |
+| ۵ | عدد مخلوط و عدد اعشاری |
+| ۶ | شکل‌های هندسی |
+| ۷ | آمار و احتمال |
+
+هر فصل شبیه‌ساز تعاملی، اهداف یادگیری، آزمون چندگزینه‌ای با پاسخ تشریحی و کارنامه دارد.
 
 ---
 
@@ -23,7 +41,8 @@
 
 1. لینک بالا را در مرورگر باز کنید (کروم، فایرفاکس، اج یا سافاری).
 2. روی دکمهٔ **«ورود به شبیه‌ساز»** کلیک کنید.
-3. صفحهٔ آزمایشگاه مجازی باز می‌شود و شبیه‌ساز در مرورگر اجرا می‌شود؛ نیازی به نصب یا دانلود هیچ نرم‌افزاری نیست.
+3. از منوی کناری فصل مورد نظر را انتخاب کنید.
+4. با شبیه‌ساز هر فصل کار کنید و در پایان آزمون آن فصل را بدهید.
 
 > نکته: برای تجربهٔ بهتر، صفحه را روی نمایشگر بزرگ‌تر یا در حالت تمام‌صفحه باز کنید.
 
@@ -31,24 +50,42 @@
 
 ## ساختار مخزن
 
-| فایل | توضیح |
+| مسیر | توضیح |
 | --- | --- |
 | `index.html` | صفحهٔ ویترین با دکمهٔ ورود به شبیه‌ساز |
-| `simulator.html` | صفحهٔ ورود به آزمایشگاه مجازی |
+| `lab/index.html` | خود شبیه‌ساز — فایل build شده و کاملاً خودکفا |
+| `simulator.html` | تغییر مسیر به `lab/` (برای لینک‌های قدیمی) |
+| `simulator-src/` | سورس‌کد شبیه‌ساز (React + TypeScript + Vite + Tailwind) |
 | `README.md` | همین راهنما |
 | `LICENSE` | مجوز استفاده |
 
 ---
 
+## ساخت مجدد از روی سورس
+
+```bash
+cd simulator-src
+npm install
+npm run build
+cp dist/index.html ../lab/index.html
+```
+
+پروژه با `vite-plugin-singlefile` ساخته می‌شود، بنابراین خروجی یک فایل HTML خودکفاست که همهٔ CSS و JavaScript داخل آن جاسازی شده است.
+
+---
+
 ## English
 
-This repository is a showcase for the **Smart Simulators** project. It contains no simulation
-source code — only the entry link to the virtual lab.
+An interactive **virtual math lab for 4th-grade elementary school**, covering seven chapters
+with simulators, learning goals, quizzes and a report card.
 
 **Open the simulator here:** https://fatemeh1203.github.io/Smart-Simulators-ShowCase/
 
-Click the **«ورود به شبیه‌ساز» (Enter Simulator)** button on that page to open the virtual lab
-(`simulator.html`), which takes you to the running simulator. No installation required.
+Click the **«ورود به شبیه‌ساز» (Enter Simulator)** button on that page to open the virtual lab,
+or go straight to https://fatemeh1203.github.io/Smart-Simulators-ShowCase/lab/.
+It runs entirely in the browser — no installation required.
+
+Built with React, TypeScript, Vite and Tailwind CSS. Source lives in `simulator-src/`.
 
 ---
 
