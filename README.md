@@ -119,6 +119,8 @@ The Python code **really runs** in your browser — a genuine CPython interprete
 
 ### 👉 [https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-basics/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-basics/)
 
+<img src="docs/screenshots/pb-01-home.png" alt="Python Basics course home" width="100%">
+
 </div>
 
 **فارسی:** یک دورهٔ کامل و مستقل پایتون برای مبتدیان (پایهٔ دهم تا دوازدهم) به تدریس **فاطمه شمس**.
@@ -129,6 +131,44 @@ The Python code **really runs** in your browser — a genuine CPython interprete
 It has 14 lessons, 42 worked examples with expected output, a live code playground (real Python via Pyodide),
 140 quiz questions (10 per lesson), a 40-question random final exam, an answer key with explanations, and a printable report card.
 The default language is English, switchable to Persian (full RTL) from the top bar.
+
+<div align="center">
+
+<table>
+<tr>
+<td width="50%">
+<img src="docs/screenshots/pb-02-lesson.png" alt="Lesson view" width="100%"><br>
+<b>Each lesson — idea, syntax and worked code</b><br>
+<sub>هر درس — ایده، سینتکس و کد نمونه</sub>
+</td>
+<td width="50%">
+<img src="docs/screenshots/pb-03-playground.png" alt="Code playground" width="100%"><br>
+<b>Playground — edit and run real Python</b><br>
+<sub>کارگاه کد — ویرایش و اجرای پایتون واقعی</sub>
+</td>
+</tr>
+<tr>
+<td width="50%">
+<img src="docs/screenshots/pb-04-quiz.png" alt="Lesson quiz" width="100%"><br>
+<b>Ten-question quiz with an answer key</b><br>
+<sub>آزمون ۱۰ سؤالی همراه با پاسخ‌نامه</sub>
+</td>
+<td width="50%">
+<img src="docs/screenshots/pb-05-report.png" alt="Report card" width="100%"><br>
+<b>Printable report card with per-topic scores</b><br>
+<sub>کارنامهٔ قابل چاپ با نمرهٔ هر مبحث</sub>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<img src="docs/screenshots/pb-06-fa-dark.png" alt="Persian, right-to-left, dark theme" width="100%"><br>
+<b>Full Persian (RTL) interface and a dark theme</b><br>
+<sub>رابط کاملاً فارسی و راست‌به‌چپ به همراه پوستهٔ تیره</sub>
+</td>
+</tr>
+</table>
+
+</div>
 
 > **فارسی:** درس‌ها، مثال‌ها، آزمون‌ها و کارنامه بدون اینترنت کار می‌کنند؛ فقط دکمهٔ «اجرا» بار اول برای بارگذاری موتور پایتون به اینترنت نیاز دارد.
 > **English:** Lessons, examples, quizzes and the report card work offline; only the **Run** button needs the internet once, to load the Python engine from a CDN.
