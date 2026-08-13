@@ -23,8 +23,7 @@
 
 1. لینک بالا را در مرورگر باز کنید (کروم، فایرفاکس، اج یا سافاری).
 2. روی دکمهٔ **«ورود به شبیه‌ساز»** کلیک کنید.
-3. شبیه‌ساز داخل همان صفحه بالا می‌آید؛ نیازی به نصب یا دانلود هیچ نرم‌افزاری نیست.
-4. با دکمهٔ **«بازگشت»** در بالای صفحه می‌توانید به ویترین برگردید.
+3. صفحهٔ آزمایشگاه مجازی باز می‌شود و شبیه‌ساز در مرورگر اجرا می‌شود؛ نیازی به نصب یا دانلود هیچ نرم‌افزاری نیست.
 
 > نکته: برای تجربهٔ بهتر، صفحه را روی نمایشگر بزرگ‌تر یا در حالت تمام‌صفحه باز کنید.
 
@@ -35,7 +34,7 @@
 | فایل | توضیح |
 | --- | --- |
 | `index.html` | صفحهٔ ویترین با دکمهٔ ورود به شبیه‌ساز |
-| `simulator.html` | صفحهٔ آزمایشگاه مجازی که شبیه‌ساز در آن اجرا می‌شود |
+| `simulator.html` | صفحهٔ ورود به آزمایشگاه مجازی |
 | `README.md` | همین راهنما |
 | `LICENSE` | مجوز استفاده |
 
@@ -59,7 +58,7 @@ source code — only the entry link to the virtual lab.
 **Open the simulator here:** https://fatemeh1203.github.io/Smart-Simulators-ShowCase/
 
 Click the **«ورود به شبیه‌ساز» (Enter Simulator)** button on that page to open the virtual lab
-(`simulator.html`), where the simulator runs directly in the browser. No installation required.
+(`simulator.html`), which takes you to the running simulator. No installation required.
 
 ---
 
