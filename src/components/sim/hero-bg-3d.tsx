@@ -17,10 +17,27 @@ const NODE_COUNT = 170;
 const SPHERE_R = 1;
 const EDGE_DIST = 0.42; // 3D distance threshold for wiring two nodes
 
-// Accent colors (cyan / teal), matching the app's primary/accent tones.
-const C_NODE = [34, 211, 238]; // cyan-400
-const C_EDGE = [56, 189, 248]; // sky-400
-const C_PULSE = [125, 252, 220]; // teal glow
+// Multi-hue gradient across the sphere: cyan → sky → indigo → violet → fuchsia,
+// with an emerald accent — a rich, high-tech palette.
+const PALETTE: number[][] = [
+  [34, 211, 238], // cyan-400
+  [45, 212, 191], // teal-400
+  [56, 189, 248], // sky-400
+  [129, 140, 248], // indigo-400
+  [167, 139, 250], // violet-400
+  [232, 121, 249], // fuchsia-400
+];
+
+function paletteAt(t: number): number[] {
+  const x = Math.min(0.9999, Math.max(0, t)) * (PALETTE.length - 1);
+  const i = Math.floor(x);
+  const f = x - i;
+  const a = PALETTE[i];
+  const b = PALETTE[i + 1] ?? a;
+  return [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f, a[2] + (b[2] - a[2]) * f];
+}
+
+const C_PULSE = [186, 230, 255]; // bright icy-white pulse core
 
 export function HeroBg3D() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -42,6 +59,13 @@ export function HeroBg3D() {
       const theta = golden * i;
       nodes.push({ x: Math.cos(theta) * r * SPHERE_R, y: y * SPHERE_R, z: Math.sin(theta) * r * SPHERE_R });
     }
+
+    // per-node color: gradient from top (cyan) to bottom (fuchsia), with a
+    // slight longitudinal shimmer so neighbours differ subtly.
+    const nodeColors = nodes.map((n, i) => {
+      const t = (1 - n.y / SPHERE_R) / 2 + Math.sin(i * 0.7) * 0.05;
+      return paletteAt(t);
+    });
 
     // --- wire nearby nodes ---
     const edges: Edge[] = [];
@@ -100,12 +124,18 @@ export function HeroBg3D() {
       const scale = Math.min(W, H) * 0.42;
       const focal = 3;
 
-      // dark backdrop with a subtle radial depth glow
-      const bg = ctx.createRadialGradient(cxp, cyp * 0.85, 0, cxp, cyp, Math.max(W, H) * 0.75);
-      bg.addColorStop(0, "#0b1522");
-      bg.addColorStop(0.55, "#070d16");
-      bg.addColorStop(1, "#04070d");
+      // rich dark backdrop: deep indigo core → near-black, plus a violet
+      // accent glow toward the upper-right for a premium, colourful base.
+      const bg = ctx.createRadialGradient(cxp, cyp * 0.8, 0, cxp, cyp, Math.max(W, H) * 0.8);
+      bg.addColorStop(0, "#101a3a");
+      bg.addColorStop(0.5, "#0a1024");
+      bg.addColorStop(1, "#05060f");
       ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, W, H);
+      const accent = ctx.createRadialGradient(cxp * 1.25, cyp * 0.55, 0, cxp * 1.25, cyp * 0.55, Math.max(W, H) * 0.55);
+      accent.addColorStop(0, "rgba(124,58,237,0.18)");
+      accent.addColorStop(1, "rgba(124,58,237,0)");
+      ctx.fillStyle = accent;
       ctx.fillRect(0, 0, W, H);
 
       // project all nodes
@@ -126,30 +156,37 @@ export function HeroBg3D() {
         proj[i].depth = (z + 1) / 2; // 0 (near) .. 1 (far)
       }
 
-      // edges
+      // edges — colour blended from the two endpoints, additive neon glow
+      ctx.globalCompositeOperation = "lighter";
       ctx.lineWidth = 1;
       for (let k = 0; k < edges.length; k++) {
-        const a = proj[edges[k].a];
-        const b = proj[edges[k].b];
+        const ia = edges[k].a, ib = edges[k].b;
+        const a = proj[ia], b = proj[ib];
         const near = 1 - (a.depth + b.depth) / 2; // 1 near .. 0 far
-        const alpha = 0.05 + near * 0.28;
-        ctx.strokeStyle = `rgba(${C_EDGE[0]},${C_EDGE[1]},${C_EDGE[2]},${alpha})`;
+        const alpha = 0.04 + near * 0.2;
+        const ca = nodeColors[ia], cb = nodeColors[ib];
+        const rr = ((ca[0] + cb[0]) / 2) | 0;
+        const gg = ((ca[1] + cb[1]) / 2) | 0;
+        const bb = ((ca[2] + cb[2]) / 2) | 0;
+        ctx.strokeStyle = `rgba(${rr},${gg},${bb},${alpha})`;
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
         ctx.lineTo(b.x, b.y);
         ctx.stroke();
       }
 
-      // nodes
+      // nodes — additive glow in each node's own colour
       for (let i = 0; i < nodes.length; i++) {
         const p = proj[i];
         const near = 1 - p.depth;
-        const r = 0.6 + p.s * 2.1;
+        const r = 0.6 + p.s * 2.2;
+        const c = nodeColors[i];
         ctx.beginPath();
         ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(${C_NODE[0]},${C_NODE[1]},${C_NODE[2]},${0.25 + near * 0.6})`;
+        ctx.fillStyle = `rgba(${c[0] | 0},${c[1] | 0},${c[2] | 0},${0.35 + near * 0.55})`;
         ctx.fill();
       }
+      ctx.globalCompositeOperation = "source-over";
 
       // pulses
       for (const pl of pulses) {

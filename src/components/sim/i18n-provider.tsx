@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react";
 import { translations, type Lang, type Translation } from "@/lib/translations";
+import { setDigitLang } from "@/lib/format";
 
 interface I18nContextValue {
   lang: Lang;
@@ -24,6 +25,10 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   // Use lazy initializer — runs only once, on the client, no effect needed
   // On SSR returns "en", on client first render returns stored value
   const [lang, setLangState] = useState<Lang>(getInitialLang);
+
+  // Keep digit localization in sync during render, so numbers formatted by
+  // children this pass use the correct (Latin vs Persian) digits.
+  setDigitLang(lang);
 
   // Sync <html> attributes and localStorage whenever lang changes
   useEffect(() => {
