@@ -1,0 +1,259 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-vazirmatn);
+  --font-mono: ui-monospace, "JetBrains Mono", "Geist Mono", monospace;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* === Dark tech-reactor theme (default) === */
+:root {
+  --radius: 0.625rem;
+
+  /* Background: deep navy-black like reactor control room */
+  --background: oklch(0.13 0.02 250);
+  --foreground: oklch(0.95 0.01 200);
+
+  --card: oklch(0.17 0.025 250);
+  --card-foreground: oklch(0.95 0.01 200);
+
+  --popover: oklch(0.17 0.025 250);
+  --popover-foreground: oklch(0.95 0.01 200);
+
+  /* Primary: teal/cyan — fiber optic glow */
+  --primary: oklch(0.72 0.16 195);
+  --primary-foreground: oklch(0.13 0.02 250);
+
+  /* Secondary: deep slate */
+  --secondary: oklch(0.25 0.03 250);
+  --secondary-foreground: oklch(0.95 0.01 200);
+
+  --muted: oklch(0.22 0.025 250);
+  --muted-foreground: oklch(0.65 0.02 200);
+
+  /* Accent: amber/orange — neutron heat */
+  --accent: oklch(0.7 0.18 65);
+  --accent-foreground: oklch(0.13 0.02 250);
+
+  --destructive: oklch(0.62 0.24 25);
+
+  --border: oklch(0.28 0.025 250);
+  --input: oklch(0.22 0.025 250);
+  --ring: oklch(0.72 0.16 195);
+
+  /* Chart palette: reactor-themed */
+  --chart-1: oklch(0.72 0.16 195); /* teal — fiber */
+  --chart-2: oklch(0.72 0.19 65);  /* amber — neutron */
+  --chart-3: oklch(0.65 0.25 25); /* red-orange — warning */
+  --chart-4: oklch(0.7 0.18 300); /* magenta — quantum */
+  --chart-5: oklch(0.75 0.16 145); /* green — safe */
+
+  --sidebar: oklch(0.15 0.02 250);
+  --sidebar-foreground: oklch(0.95 0.01 200);
+  --sidebar-primary: oklch(0.72 0.16 195);
+  --sidebar-primary-foreground: oklch(0.13 0.02 250);
+  --sidebar-accent: oklch(0.25 0.03 250);
+  --sidebar-accent-foreground: oklch(0.95 0.01 200);
+  --sidebar-border: oklch(0.28 0.025 250);
+  --sidebar-ring: oklch(0.72 0.16 195);
+}
+
+.dark {
+  /* Same as :root — dark is the default */
+  --background: oklch(0.13 0.02 250);
+  --foreground: oklch(0.95 0.01 200);
+  --card: oklch(0.17 0.025 250);
+  --card-foreground: oklch(0.95 0.01 200);
+  --popover: oklch(0.17 0.025 250);
+  --popover-foreground: oklch(0.95 0.01 200);
+  --primary: oklch(0.72 0.16 195);
+  --primary-foreground: oklch(0.13 0.02 250);
+  --secondary: oklch(0.25 0.03 250);
+  --secondary-foreground: oklch(0.95 0.01 200);
+  --muted: oklch(0.22 0.025 250);
+  --muted-foreground: oklch(0.65 0.02 200);
+  --accent: oklch(0.7 0.18 65);
+  --accent-foreground: oklch(0.13 0.02 250);
+  --destructive: oklch(0.62 0.24 25);
+  --border: oklch(0.28 0.025 250);
+  --input: oklch(0.22 0.025 250);
+  --ring: oklch(0.72 0.16 195);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "cv01";
+    background-image:
+      radial-gradient(circle at 12% 18%, oklch(0.2 0.06 195 / 0.18) 0%, transparent 35%),
+      radial-gradient(circle at 88% 75%, oklch(0.2 0.07 65 / 0.13) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, oklch(0.18 0.04 300 / 0.06) 0%, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: oklch(0.15 0.02 250);
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(0.32 0.04 195);
+  border-radius: 5px;
+  border: 2px solid oklch(0.15 0.02 250);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.55 0.1 195);
+}
+
+/* Mono text LTR */
+.font-mono {
+  direction: ltr;
+  display: inline-block;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section anchor offset */
+section[id] {
+  scroll-margin-top: 80px;
+}
+
+/* === Glow effects === */
+.glow-primary {
+  box-shadow: 0 0 24px -4px oklch(0.72 0.16 195 / 0.45);
+}
+.glow-accent {
+  box-shadow: 0 0 24px -4px oklch(0.7 0.18 65 / 0.45);
+}
+.glow-danger {
+  box-shadow: 0 0 24px -4px oklch(0.62 0.24 25 / 0.45);
+}
+.text-glow-primary {
+  text-shadow: 0 0 18px oklch(0.72 0.16 195 / 0.55);
+}
+.text-glow-accent {
+  text-shadow: 0 0 18px oklch(0.7 0.18 65 / 0.55);
+}
+
+/* === Reactor pulse animation === */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.35;
+  }
+  100% {
+    transform: scale(0.85);
+    opacity: 0.7;
+  }
+}
+.pulse-ring {
+  animation: pulse-ring 3s ease-in-out infinite;
+}
+
+/* === Flowing dashed line animation (for pipelines) === */
+@keyframes flow {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+.flow-line {
+  stroke-dasharray: 4 4;
+  animation: flow 0.8s linear infinite;
+}
+
+/* === Fade-in === */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in-up {
+  animation: fade-in-up 0.5s ease-out;
+}
+
+/* === Slider custom (radix slider) === */
+[data-slider-thumb] {
+  box-shadow: 0 0 0 1px oklch(0.72 0.16 195 / 0.4), 0 0 12px oklch(0.72 0.16 195 / 0.5) !important;
+}
+
+/* === Glass card === */
+.glass-card {
+  background: linear-gradient(
+    135deg,
+    oklch(0.18 0.025 250 / 0.7) 0%,
+    oklch(0.16 0.025 250 / 0.6) 100%
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid oklch(0.3 0.03 195 / 0.25);
+}
+
+/* === Hexagonal badge (atomic-style) === */
+.hex-badge {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+/* === Animate rotation (for atom icons) === */
+@keyframes slow-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.slow-spin {
+  animation: slow-spin 24s linear infinite;
+}
