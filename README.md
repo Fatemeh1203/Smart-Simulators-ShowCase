@@ -23,18 +23,18 @@
 
 <div align="center">
 
-### ▶️ [ورود به شبیه‌ساز · Open the simulator](https://preview-chat-b59e4b19-bf8f-45f9-a25f-a08e6c3fc16f.space-z.ai)
+### ▶️ [ورود به شبیه‌ساز · Open the simulator](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/ic-sim/)
 
-`https://preview-chat-b59e4b19-bf8f-45f9-a25f-a08e6c3fc16f.space-z.ai`
+`https://fatemeh1203.github.io/Smart-Simulators-ShowCase/ic-sim/`
 
 </div>
 
-**فارسی:** شبیه‌ساز به‌صورت آنلاین روی لینک بالا در دسترس است. کافی است آن را در مرورگر باز کنید — زبان پیش‌فرض انگلیسی است و از نوار بالا به فارسی تغییر می‌کند.
+**فارسی:** شبیه‌ساز روی **GitHub Pages** منتشر شده و با لینک بالا مستقیماً در مرورگر باز می‌شود — زبان پیش‌فرض انگلیسی است و از نوار بالا به فارسی تغییر می‌کند. (نسخهٔ استاتیک از همین سورس ساخته و روی برنچ `main` در مسیر `ic-sim/` قرار گرفته است.)
 
-**English:** The simulator is live at the link above. Just open it in a browser — the default language is English and can be switched to Persian from the top bar.
+**English:** The simulator is published on **GitHub Pages** and opens straight in the browser from the link above — default language English, switchable to Persian from the top bar. (A static export built from this source is hosted on the `main` branch under `ic-sim/`.)
 
-> **📌 این برنچ فقط برای پروژهٔ I&C Simulator است** و به‌صورت جداگانه نگه‌داری می‌شود.
-> **This branch holds only the I&C Simulator project** and is kept separate from the other simulators.
+> **📌 سورس این پروژه روی همین برنچ (`ic-simulator`) نگه‌داری می‌شود؛ نسخهٔ منتشرشده روی `main/ic-sim/` است.**
+> **The source lives on this `ic-simulator` branch; the published build is on `main/ic-sim/`.**
 
 ---
 
@@ -84,8 +84,28 @@ bun run build
 سپس در مرورگر باز کنید: <http://localhost:3000>
 Then open <http://localhost:3000> in your browser.
 
-> **فارسی:** این اپ Next.js است و برای اجرای تولیدی به یک محیط Node/Bun نیاز دارد (نه میزبان صرفاً استاتیک). نسخهٔ آنلاین از قبل روی لینک بالا منتشر شده است.
-> **English:** This is a Next.js app and needs a Node/Bun runtime for production (not a purely static host). A live version is already deployed at the link above.
+> **فارسی:** این اپ Next.js است و برای اجرای تولیدیِ کامل به محیط Node/Bun نیاز دارد. برای میزبانی روی GitHub Pages، از آن یک **static export** گرفته شده است.
+> **English:** This is a Next.js app and needs a Node/Bun runtime for a full production server. For GitHub Pages hosting it is built as a **static export**.
+
+### 🌐 ساخت نسخهٔ GitHub Pages &nbsp;|&nbsp; Building the GitHub Pages version
+
+برای بازتولید نسخهٔ منتشرشده در `main/ic-sim/`، در `next.config.ts` این تنظیمات اعمال شده است:
+To reproduce the build published at `main/ic-sim/`, `next.config.ts` uses:
+
+```ts
+output: "export",
+basePath: "/Smart-Simulators-ShowCase/ic-sim",
+assetPrefix: "/Smart-Simulators-ShowCase/ic-sim",
+trailingSlash: true,
+images: { unoptimized: true },
+```
+
+- مسیر `src/app/api/` حذف شده (static export از route handler پشتیبانی نمی‌کند).
+  The `src/app/api/` route is removed (static export does not support route handlers).
+- فونت Vazirmatn به‌جای `next/font` با یک `<link>` در زمان اجرا بارگذاری می‌شود.
+  The Vazirmatn font is loaded via a runtime `<link>` instead of `next/font`.
+- سپس `npx next build` خروجی `out/` را می‌سازد که در `main/ic-sim/` قرار می‌گیرد.
+  Then `npx next build` produces `out/`, which is copied to `main/ic-sim/`.
 
 ---
 
