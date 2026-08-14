@@ -24,6 +24,24 @@
 
 ---
 
+## 🔗 لینک ورود &nbsp;|&nbsp; Open the simulator
+
+<div align="center">
+
+### ▶️ [ورود به شبیه‌ساز · Open the simulator](https://raw.githack.com/Fatemeh1203/Smart-Simulators-ShowCase/fiber-optic-sensor/index.html)
+
+`https://raw.githack.com/Fatemeh1203/Smart-Simulators-ShowCase/fiber-optic-sensor/index.html`
+
+**رمز · Password:** `project01`
+
+</div>
+
+**فارسی:** چون این شبیه‌ساز روی یک برنچ جداست (و GitHub Pages فقط برنچ `main` را منتشر می‌کند)، این لینک فایل را مستقیم از همین برنچ، از طریق سرویس رایگان **raw.githack.com** نمایش می‌دهد. کافی است لینک را باز کنید و رمز بالا را وارد کنید. هر بار که نسخهٔ جدیدی به این برنچ push شود، لینک هم به‌روز می‌شود.
+
+**English:** Because this simulator lives on a separate branch (and GitHub Pages only publishes the `main` branch), this link serves the file straight from this branch through the free **raw.githack.com** service. Just open the link and enter the password above. The link updates whenever a new version is pushed to this branch.
+
+---
+
 ## 🔐 رمز ورود &nbsp;|&nbsp; Access password
 
 برای دیدن شبیه‌ساز باید رمز عبور را وارد کنید:
