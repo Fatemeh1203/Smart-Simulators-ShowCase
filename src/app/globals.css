@@ -3,6 +3,20 @@
 
 @custom-variant dark (&:is(.dark *));
 
+:root {
+  --font-vazirmatn: "Vazirmatn", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Actionable controls always signal that they can be clicked. */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]),
+a[href],
+label[for],
+summary {
+  cursor: pointer;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

@@ -61,14 +61,14 @@ export default function Home() {
             <div className="flex flex-wrap gap-3 mt-8 fade-in-up">
               <a
                 href="#sec1"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm hover:opacity-90 transition-opacity glow-primary font-medium"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground text-sm hover:opacity-90 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/40 active:translate-y-0 active:scale-[0.97] transition-all glow-primary font-medium"
               >
                 {h.startBtn}
                 {isRtl ? <ArrowRight className="h-4 w-4 rotate-180" /> : <ArrowRight className="h-4 w-4" />}
               </a>
               <a
                 href="#glossary"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-md border border-border bg-card/60 backdrop-blur-sm text-sm hover:bg-accent/20 transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-md border border-border bg-card/60 backdrop-blur-sm text-sm hover:bg-accent/20 hover:border-primary/60 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.97] transition-all"
               >
                 <BookOpen className="h-4 w-4" />
                 {h.glossaryBtn}
