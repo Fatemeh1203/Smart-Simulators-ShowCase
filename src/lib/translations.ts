@@ -510,7 +510,7 @@ export const en: Translation = {
   },
 
   footer: {
-    basedOn: "Based on the joint chapter with Dr. Bahman Zahouri · IASBS · Research on modal-interference fiber optic sensors.",
+    basedOn: "Based on the joint chapter with Dr. Bahman Zahouri.",
     sourcesTitle: "Sources",
     copyright: "Built for interactive I&C education · Version 1.0",
   },
@@ -787,7 +787,7 @@ export const fa: Translation = {
   },
 
   footer: {
-    basedOn: "بر اساس فصل مشترک با دکتر بهمن ظهوری · مؤسسه‌ی IASBS · پژوهش حسگرهای فیبر نوری مبتنی بر تداخل مودی.",
+    basedOn: "بر اساس فصل مشترک با دکتر بهمن ظهوری.",
     sourcesTitle: "منابع",
     copyright: "ساخته‌شده برای آموزش تعاملی مفاهیم I&C · نسخه‌ی ۱٫۰",
   },
