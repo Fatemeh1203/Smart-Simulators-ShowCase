@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Smart Simulators ShowCase</title>
-<meta name="description" content="ویترین شبیه‌سازهای آموزشی و پژوهشی — آزمایشگاه مجازی ریاضی، آموزش تعاملی پایتون و دورهٔ پایتون مقدماتی">
+<title>آزمایشگاه مجازی ریاضی — چهارم دبستان</title>
+<meta name="description" content="آزمایشگاه مجازی ریاضی چهارم دبستان — هفت فصل با شبیه‌ساز، آزمون و کارنامه">
 <style>
   :root{
     --bg:#0d1117;
@@ -14,8 +14,6 @@
     --muted:#9aa7b4;
     --accent:#2f81f7;
     --accent-hover:#4b95f9;
-    --py:#8957e5;
-    --py-hover:#a371f7;
   }
   *{box-sizing:border-box}
   body{
@@ -30,15 +28,9 @@
     justify-content:center;
     padding:40px 20px;
   }
-  main{width:100%;max-width:940px;text-align:center}
+  main{width:100%;max-width:560px;text-align:center}
   h1{font-size:clamp(24px,5vw,34px);margin:0 0 8px}
   .sub{color:var(--muted);margin:0 0 40px;font-size:15px}
-  .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:20px;
-    text-align:right;
-  }
   .card{
     background:var(--panel);
     border:1px solid var(--border);
@@ -46,6 +38,7 @@
     padding:28px 24px;
     display:flex;
     flex-direction:column;
+    text-align:right;
   }
   .icon{font-size:32px;line-height:1;margin-bottom:14px}
   .card h2{margin:0 0 6px;font-size:20px}
@@ -79,8 +72,6 @@
     transition:background .15s ease;
   }
   .btn:hover,.btn:focus-visible{background:var(--accent-hover)}
-  .btn.py{background:var(--py)}
-  .btn.py:hover,.btn.py:focus-visible{background:var(--py-hover)}
   .hint{margin:26px 0 0;font-size:13px;color:var(--muted)}
   footer{margin-top:32px;font-size:13px;color:var(--muted)}
   footer a{color:var(--accent);text-decoration:none}
@@ -89,66 +80,26 @@
 </head>
 <body>
 <main>
-  <h1>Smart Simulators ShowCase</h1>
-  <p class="sub">شبیه‌سازی‌های تعاملی آموزشی، پژوهشی و آزمایشگاهی</p>
+  <h1>آزمایشگاه مجازی ریاضی</h1>
+  <p class="sub">شبیه‌ساز تعاملی ریاضی چهارم دبستان</p>
 
-  <div class="grid">
-
-    <div class="card">
-      <div class="icon">🔬</div>
-      <h2>آزمایشگاه مجازی ریاضی</h2>
-      <p class="lead">ریاضی چهارم دبستان — هفت فصل با شبیه‌ساز، آزمون و کارنامه</p>
-      <ul class="chapters">
-        <li>اعداد و الگوها</li>
-        <li>کسرها</li>
-        <li>ضرب و تقسیم</li>
-        <li>زاویه و زمان</li>
-        <li>عدد اعشاری</li>
-        <li>شکل‌های هندسی</li>
-        <li>آمار و احتمال</li>
-      </ul>
-      <a class="btn" href="lab/">ورود به شبیه‌ساز ریاضی</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">🐍</div>
-      <h2>آموزش تعاملی پایتون</h2>
-      <p class="lead">پایتون مقدماتی — ۱۴ مبحث، کد قابل ویرایش و اجرای واقعی در مرورگر</p>
-      <ul class="chapters">
-        <li>print</li>
-        <li>متغیرها</li>
-        <li>رشته‌ها</li>
-        <li>اعداد</li>
-        <li>تبدیل نوع</li>
-        <li>input</li>
-        <li>شرط‌ها</li>
-        <li>حلقه‌ها</li>
-        <li>لیست‌ها</li>
-      </ul>
-      <a class="btn py" href="python-lab/">ورود به شبیه‌ساز پایتون</a>
-    </div>
-
-    <div class="card">
-      <div class="icon">🎓</div>
-      <h2>دورهٔ پایتون مقدماتی</h2>
-      <p class="lead">مدرس: فاطمه شمس — ۱۴ درس، کارگاه کد زنده، ۱۴۰ سؤال آزمون و کارنامهٔ قابل چاپ (دو‌زبانه)</p>
-      <ul class="chapters">
-        <li>print</li>
-        <li>متغیرها</li>
-        <li>تبدیل نوع</li>
-        <li>کتابخانهٔ math</li>
-        <li>شرط‌ها</li>
-        <li>حلقهٔ for</li>
-        <li>حلقهٔ while</li>
-        <li>حلقه‌های تودرتو</li>
-        <li>لیست‌ها</li>
-      </ul>
-      <a class="btn py" href="python-basics/">ورود به دورهٔ پایتون</a>
-    </div>
-
+  <div class="card">
+    <div class="icon">🔬</div>
+    <h2>آزمایشگاه مجازی ریاضی</h2>
+    <p class="lead">ریاضی چهارم دبستان — هفت فصل با شبیه‌ساز، آزمون و کارنامه</p>
+    <ul class="chapters">
+      <li>اعداد و الگوها</li>
+      <li>کسرها</li>
+      <li>ضرب و تقسیم</li>
+      <li>زاویه و زمان</li>
+      <li>عدد اعشاری</li>
+      <li>شکل‌های هندسی</li>
+      <li>آمار و احتمال</li>
+    </ul>
+    <a class="btn" href="lab/">ورود به شبیه‌ساز ریاضی</a>
   </div>
 
-  <p class="hint">هر سه شبیه‌ساز مستقیماً در مرورگر اجرا می‌شوند و نیازی به نصب چیزی نیست.</p>
+  <p class="hint">شبیه‌ساز مستقیماً در مرورگر اجرا می‌شود و نیازی به نصب چیزی نیست.</p>
 
   <footer>
     <a href="https://github.com/Fatemeh1203/Smart-Simulators-ShowCase">مشاهدهٔ مخزن روی GitHub</a>
