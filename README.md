@@ -31,11 +31,13 @@
 
 | | شبیه‌ساز &nbsp;/&nbsp; Simulator | لینک ورود &nbsp;/&nbsp; Entry link |
 |:-:|:--|:--|
-| 🔬 | **آزمایشگاه مجازی ریاضی** — چهارم دبستان<br>**Virtual Math Lab** — Grade 4 | **[/lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/lab/)** |
 | 🐍 | **آموزش تعاملی پایتون** — مقدماتی<br>**Interactive Python Course** — beginner | **[/python-lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-lab/)** |
 | 🎓 | **دورهٔ پایتون مقدماتی** — فاطمه شمس<br>**Python Basics Course** — Fatemeh Shams | **[/python-basics/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-basics/)** |
 
 </div>
+
+> **🔬 آزمایشگاه مجازی ریاضی (چهارم دبستان)** روی برنچ جداگانهٔ [`math-lab-grade4`](https://github.com/Fatemeh1203/Smart-Simulators-ShowCase/tree/math-lab-grade4) نگه‌داری می‌شود.
+> The **Virtual Math Lab (Grade 4)** now lives on its own [`math-lab-grade4`](https://github.com/Fatemeh1203/Smart-Simulators-ShowCase/tree/math-lab-grade4) branch.
 
 > **فارسی:** ابتدا [صفحهٔ ویترین](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/) را باز کنید، سپس روی دکمهٔ شبیه‌ساز دلخواه کلیک کنید.
 > یا با لینک‌های جدول بالا مستقیم وارد همان شبیه‌ساز شوید.
@@ -175,77 +177,6 @@ The default language is English, switchable to Persian (full RTL) from the top b
 
 ---
 
-# 🔬 آزمایشگاه مجازی ریاضی &nbsp;|&nbsp; Virtual Math Lab
-
-<div align="center">
-
-### 👉 [https://fatemeh1203.github.io/Smart-Simulators-ShowCase/lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/lab/)
-
-<img src="docs/screenshots/01-dashboard.png" alt="Math lab dashboard" width="100%">
-
-</div>
-
-**فارسی:** آزمایشگاه تعاملی ریاضی چهارم دبستان در هفت فصل، با شبیه‌ساز عملی، اهداف یادگیری، آزمون و کارنامهٔ توصیفی قابل چاپ.
-
-**English:** An interactive math lab for fourth grade in seven chapters, with hands-on simulators, learning goals, quizzes and a printable descriptive report card.
-
-<div align="center">
-
-<table>
-<tr>
-<td width="50%">
-<img src="docs/screenshots/02-chapters.png" alt="Chapter cards" width="100%"><br>
-<b>Seven chapter cards with learning goals</b><br>
-<sub>هفت کارت فصل به همراه اهداف یادگیری</sub>
-</td>
-<td width="50%">
-<img src="docs/screenshots/03-fractions.png" alt="Fraction lab" width="100%"><br>
-<b>Fraction lab — slice the pizza, build the fraction</b><br>
-<sub>آزمایشگاه کسر — پیتزا را برش بزن و کسر بساز</sub>
-</td>
-</tr>
-<tr>
-<td width="50%">
-<img src="docs/screenshots/04-angles.png" alt="Protractor lab" width="100%"><br>
-<b>Virtual protractor — drag to explore angle types</b><br>
-<sub>نقالهٔ مجازی — با کشیدن نوار، نوع زاویه را کشف کن</sub>
-</td>
-<td width="50%">
-<img src="docs/screenshots/05-geometry.png" alt="Geometry lab" width="100%"><br>
-<b>Geoboard — resize a shape, watch perimeter and area update</b><br>
-<sub>جئوبورد — اندازهٔ شکل را تغییر بده و محیط و مساحت را ببین</sub>
-</td>
-</tr>
-<tr>
-<td width="50%">
-<img src="docs/screenshots/06-quiz.png" alt="Quiz" width="100%"><br>
-<b>Five-question quiz with worked explanations</b><br>
-<sub>آزمون پنج‌سؤالی با پاسخ تشریحی</sub>
-</td>
-<td width="50%">
-<img src="docs/screenshots/07-report.png" alt="Report card" width="100%"><br>
-<b>Printable descriptive report card</b><br>
-<sub>کارنامهٔ توصیفی قابل چاپ</sub>
-</td>
-</tr>
-</table>
-
-</div>
-
-### 📚 فصل‌ها &nbsp;|&nbsp; Chapters
-
-| # | English | فارسی |
-|:-:|:--|:--|
-| ۱ | Numbers & Patterns | اعداد و الگوها |
-| ۲ | Fractions | کسرها |
-| ۳ | Multiplication & Division | ضرب و تقسیم |
-| ۴ | Angles & Time | زاویه و زمان |
-| ۵ | Mixed & Decimal Numbers | عدد مخلوط و عدد اعشاری |
-| ۶ | Geometric Shapes | شکل‌های هندسی |
-| ۷ | Statistics & Probability | آمار و احتمال |
-
----
-
 ## ✨ ویژگی‌های مشترک &nbsp;|&nbsp; Shared Features
 
 | | English | فارسی |
@@ -263,13 +194,13 @@ The default language is English, switchable to Persian (full RTL) from the top b
 
 | مسیر / Path | توضیح / Description |
 |:--|:--|
-| `index.html` | صفحهٔ ویترین با دکمهٔ هر شبیه‌ساز — Showcase page linking to all simulators |
-| `lab/` | آزمایشگاه ریاضی — the math lab |
+| `index.html` | صفحهٔ ویترین با دکمهٔ هر شبیه‌ساز — Showcase page linking to the simulators |
 | `python-lab/` | شبیه‌ساز پایتون — the Python course |
 | `python-basics/` | دورهٔ پایتون مقدماتی (فاطمه شمس) — the Python Basics course |
-| `simulator.html` | تغییر مسیر به `lab/` — redirect kept for older links |
-| `simulator-src/` | سورس آزمایشگاه ریاضی — math lab source |
 | `docs/screenshots/` | تصاویر همین راهنما — images used in this README |
+
+> شبیه‌ساز ریاضی چهارم دبستان (`lab/`، `simulator-src/`، `simulator.html`) روی برنچ `math-lab-grade4` قرار دارد.
+> The grade-4 math lab (`lab/`, `simulator-src/`, `simulator.html`) is kept on the `math-lab-grade4` branch.
 
 این مخزن **ویترین** پروژه‌هاست: لینک دسترسی به شبیه‌سازها آزاد و عمومی است، اما سورس‌کد شبیه‌ساز پایتون در این مخزن منتشر نشده است.
 
