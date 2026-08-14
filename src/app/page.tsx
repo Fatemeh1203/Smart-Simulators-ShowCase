@@ -10,6 +10,7 @@ import { DigitalTwinSection } from "@/components/sections/digital-twin";
 import { IEC61850Section } from "@/components/sections/iec-61850";
 import { StandardsSection } from "@/components/sections/standards-table";
 import { GlossarySection } from "@/components/sections/glossary";
+import { HeroBg3D } from "@/components/sim/hero-bg-3d";
 import { useI18n } from "@/components/sim/i18n-provider";
 import { Atom, ArrowRight, BookOpen, Sparkles, Activity, Sigma, Waves, Boxes, Network, BookCheck } from "lucide-react";
 
@@ -23,7 +24,9 @@ export default function Home() {
   const isRtl = lang === "fa";
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className="relative min-h-screen">
+      <HeroBg3D />
+      <div className="relative z-10 flex min-h-screen flex-col">
       <SiteHeader />
 
       {/* Hero */}
@@ -125,6 +128,7 @@ export default function Home() {
       </main>
 
       <SiteFooter />
+      </div>
     </div>
   );
 }
