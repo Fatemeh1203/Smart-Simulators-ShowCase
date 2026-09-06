@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  font-family: "Vazirmatn", ui-sans-serif, system-ui, sans-serif;
+  background: #f3f6fb;
+  color: #0f172a;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.num {
+  font-variant-numeric: tabular-nums;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* ---------- Coin flip ---------- */
+.coin-scene {
+  perspective: 900px;
+}
+.coin {
+  transform-style: preserve-3d;
+  position: relative;
+  transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.coin.flipping {
+  animation: coin-toss 0.9s cubic-bezier(0.3, 0.7, 0.4, 1) forwards;
+}
+.coin-face {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coin-face.back {
+  transform: rotateY(180deg);
+}
+@keyframes coin-toss {
+  0% {
+    transform: translateY(0) rotateY(var(--from, 0deg));
+  }
+  45% {
+    transform: translateY(-110px) rotateY(calc(var(--from, 0deg) + 900deg));
+  }
+  100% {
+    transform: translateY(0) rotateY(var(--to, 0deg));
+  }
+}
+
+/* ---------- Dice ---------- */
+.dice-scene {
+  perspective: 800px;
+}
+.dice-cube {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+.dice-cube.rolling {
+  animation: dice-roll 1s cubic-bezier(0.25, 0.8, 0.35, 1) forwards;
+}
+@keyframes dice-roll {
+  0% {
+    transform: translateY(0) rotateX(var(--fx, 0deg)) rotateY(var(--fy, 0deg));
+  }
+  40% {
+    transform: translateY(-90px) rotateX(calc(var(--fx, 0deg) + 540deg))
+      rotateY(calc(var(--fy, 0deg) + 360deg)) rotateZ(90deg);
+  }
+  100% {
+    transform: translateY(0) rotateX(var(--tx, 0deg)) rotateY(var(--ty, 0deg));
+  }
+}
+.dice-face {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, #ffffff, #e8ecf3);
+  border: 2px solid #cbd5e1;
+  border-radius: 14px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 12%;
+  box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.05);
+}
+.pip {
+  width: 70%;
+  height: 70%;
+  border-radius: 9999px;
+  background: #0f172a;
+  place-self: center;
+}
+
+/* ---------- Ball pick ---------- */
+@keyframes ball-pop {
+  0% {
+    transform: translateY(40px) scale(0.4);
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-14px) scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+.ball-pop {
+  animation: ball-pop 0.55s cubic-bezier(0.3, 0.8, 0.3, 1.2) forwards;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-6deg) translateX(-4px);
+  }
+  40% {
+    transform: rotate(6deg) translateX(4px);
+  }
+  60% {
+    transform: rotate(-4deg);
+  }
+  80% {
+    transform: rotate(4deg);
+  }
+}
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.pop-in {
+  animation: pop-in 0.3s ease-out;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120px) rotate(540deg);
+    opacity: 0;
+  }
+}
+.confetti {
+  animation: confetti-fall 1.4s ease-in forwards;
+}
+
+/* Slider */
+input[type="range"] {
+  accent-color: #4f46e5;
+}
+
+/* Projector / teacher mode: root font-size is scaled from React */
