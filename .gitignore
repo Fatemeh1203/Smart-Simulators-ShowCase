@@ -1,4 +1,4 @@
 node_modules/
-simulator-src/dist/
+dist/
 *.log
 .DS_Store
