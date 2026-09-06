@@ -1,210 +1,114 @@
 <div align="center">
 
-# 🔬 Smart Simulators ShowCase
+# ⚡ آزمایشگاه مجازی الکتریسیته ساکن
+# ⚡ Interactive Electrostatics Virtual Laboratory
 
-### Interactive educational simulators that run entirely in your browser
-### شبیه‌سازهای تعاملی آموزشی که کاملاً در مرورگر اجرا می‌شوند
+### شبیه‌سازی فیزیکی تعاملی الکتریسیته ساکن — فیزیک یازدهم
+### An interactive, physics-based electrostatics simulator — Grade 11 Physics
 
 <p>
 <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black">
 <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
-<img alt="Python" src="https://img.shields.io/badge/Python-Pyodide-3776AB?style=for-the-badge&logo=python&logoColor=white">
-<img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind-4-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white">
+<img alt="Vite" src="https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+<img alt="Recharts" src="https://img.shields.io/badge/Recharts-3-FF6384?style=for-the-badge">
 </p>
 
-<h3>
-
-[**▶️  &nbsp; Open the ShowCase &nbsp; · &nbsp; ورود به ویترین &nbsp; 🚀**](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/)
-
-</h3>
-
-<p><i>No install, no signup, no download.<br>
-بدون نصب، بدون ثبت‌نام، بدون دانلود.</i></p>
+`#Electrostatics` `#Physics` `#CoulombsLaw` `#ElectricField` `#Capacitor` `#Potential` `#Grade11` `#Simulator` `#PhysicsEducation`
 
 </div>
 
 ---
 
-## 🎮 شبیه‌سازها &nbsp;|&nbsp; The Simulators
+## 🔗 لینک ورود &nbsp;|&nbsp; Open the simulator
 
 <div align="center">
 
-| | شبیه‌ساز &nbsp;/&nbsp; Simulator | لینک ورود &nbsp;/&nbsp; Entry link |
-|:-:|:--|:--|
-| 🐍 | **آموزش تعاملی پایتون** — مقدماتی<br>**Interactive Python Course** — beginner | **[/python-lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-lab/)** |
-| 🎓 | **دورهٔ پایتون مقدماتی** — فاطمه شمس<br>**Python Basics Course** — Fatemeh Shams | **[/python-basics/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-basics/)** |
+### ▶️ [ورود به شبیه‌ساز · Open the simulator](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/eslab/)
+
+`https://fatemeh1203.github.io/Smart-Simulators-ShowCase/eslab/`
+
+**رمز · Password:** `project`
 
 </div>
 
-> **🔬 آزمایشگاه مجازی ریاضی (چهارم دبستان)** روی برنچ جداگانهٔ [`math-lab-grade4`](https://github.com/Fatemeh1203/Smart-Simulators-ShowCase/tree/math-lab-grade4) نگه‌داری می‌شود.
-> The **Virtual Math Lab (Grade 4)** now lives on its own [`math-lab-grade4`](https://github.com/Fatemeh1203/Smart-Simulators-ShowCase/tree/math-lab-grade4) branch.
+**فارسی:** شبیه‌ساز روی **GitHub Pages** منتشر شده و با لینک بالا مستقیماً در مرورگر باز می‌شود. با باز کردن آن، یک صفحهٔ ورود نمایش داده می‌شود. هر کسی که رمز بالا را وارد کند می‌تواند شبیه‌ساز را ببیند. رمز تا پایان همان نشست مرورگر (session) ذخیره می‌ماند و با بستن مرورگر دوباره پرسیده می‌شود. (نسخهٔ استاتیک از همین سورس ساخته و روی برنچ `main` در مسیر `eslab/` قرار گرفته است.)
 
-> **فارسی:** ابتدا [صفحهٔ ویترین](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/) را باز کنید، سپس روی دکمهٔ شبیه‌ساز دلخواه کلیک کنید.
-> یا با لینک‌های جدول بالا مستقیم وارد همان شبیه‌ساز شوید.
+**English:** The simulator is published on **GitHub Pages** and opens straight in the browser from the link above. Opening it shows a login screen. Anyone who types the password above can view the simulator. The unlock is remembered for the current browser session and is asked again after the browser is closed. (A static build from this source is hosted on the `main` branch under `eslab/`.)
+
+> ⚠️ **این یک قفلِ سمتِ‌کاربر (client-side) است، نه امنیت واقعی.** چون کل برنامه یک فایل استاتیک است، رمز عبور در سورس صفحه قابل مشاهده است و کاربر فنی می‌تواند آن را دور بزند. این قفل فقط جلوی دسترسی اتفاقی را می‌گیرد؛ برای دادهٔ حساس مناسب نیست.
 >
-> **English:** Open the [showcase page](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/) and press the button for the simulator you want,
-> or use the links in the table above to jump straight in.
+> ⚠️ **This is a client-side gate, not real security.** Because the whole app is a static file, the password is visible in the page source and a technical user can bypass it. It only keeps casual visitors out — do not rely on it for sensitive data.
+
+برای تغییر رمز، مقدار `PASSWORD` را در `eslab-src/src/Gate.tsx` عوض کنید، دوباره بیلد بگیرید و خروجی را روی `main/eslab/` جایگزین کنید.
+To change the password, edit `PASSWORD` in `eslab-src/src/Gate.tsx`, rebuild, and replace the copy at `main/eslab/`.
+
+> **📌 سورس این پروژه روی همین برنچ (`electrostatics-lab`) نگه‌داری می‌شود؛ نسخهٔ منتشرشده روی `main/eslab/` است.**
+> **The source lives on this `electrostatics-lab` branch; the published build is on `main/eslab/`.**
 
 ---
 
-# 🐍 آموزش تعاملی پایتون &nbsp;|&nbsp; Interactive Python
+## ▶️ اجرا &nbsp;|&nbsp; How to run
 
-<div align="center">
+### گزینهٔ ۱ — فایل آمادهٔ بیلد‌شده &nbsp;|&nbsp; Option 1 — prebuilt file
+فایل `index.html` در ریشهٔ این برنچ، نسخهٔ کاملاً خودکفا و بیلد‌شده است (همهٔ کدها، استایل‌ها و نمودارها در همان یک فایل قرار دارند). کافی است آن را در مرورگر باز کنید.
 
-### 👉 [https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-lab/)
+The `index.html` at the root of this branch is a fully self-contained, prebuilt bundle (all code, styles and charts are inlined in that one file). Just open it in a browser.
 
-<img src="docs/screenshots/py-01-home.png" alt="Python course home" width="100%">
+### گزینهٔ ۲ — از روی سورس &nbsp;|&nbsp; Option 2 — from source
+```bash
+cd eslab-src
+npm install
+npm run dev      # اجرای محلی برای توسعه · local dev server
+npm run build    # ساخت نسخهٔ تک‌فایلی در dist/index.html · build the single-file bundle
+```
+خروجی `eslab-src/dist/index.html` را می‌توانید جایگزین `index.html` ریشه کنید.
+Copy the resulting `eslab-src/dist/index.html` over the root `index.html`.
 
-</div>
+> **فارسی:** چون این فایل کاملاً خودکفاست (بدون هیچ مسیر نسبی)، برای انتشار روی GitHub Pages فقط کافی است همان فایل در `main/eslab/index.html` کپی شود — بدون نیاز به تنظیم مسیر پایه.
+> **English:** Since the file is fully self-contained (no relative paths), publishing to GitHub Pages is just a copy to `main/eslab/index.html` — no base-path configuration needed.
 
-**فارسی:** یک دورهٔ کامل پایتون مقدماتی در ۱۴ مبحث. هر مبحث آموزش، مثال‌های اجراشدنی و آزمون ۱۰ سؤالی دارد.
-کد پایتون **واقعاً** در مرورگر اجرا می‌شود — نه شبیه‌سازی متنی، بلکه مفسر واقعی پایتون روی WebAssembly (Pyodide).
+---
 
-**English:** A complete beginner Python course in 14 topics. Every topic has a lesson, runnable examples and a ten-question quiz.
-The Python code **really runs** in your browser — a genuine CPython interpreter on WebAssembly (Pyodide), not a text simulation.
+## 📚 محتوای شبیه‌ساز &nbsp;|&nbsp; What's inside
 
-<div align="center">
+**فارسی:** ۱۲ آزمایش تعاملی مبتنی بر فیزیک واقعی، به‌همراه سه حالت کاری — معلم (Teacher)، خودت کشف کن (Discovery) و اندازه‌گیری (Measurement).
 
-<table>
-<tr>
-<td width="50%">
-<img src="docs/screenshots/py-02-lesson.png" alt="Lesson view" width="100%"><br>
-<b>Lesson — key points, syntax, worked notes</b><br>
-<sub>آموزش — نکات کلیدی، سینتکس و توضیح</sub>
-</td>
-<td width="50%">
-<img src="docs/screenshots/py-03-editor.png" alt="Code editor" width="100%"><br>
-<b>Editable code, real output, answer checking</b><br>
-<sub>کد قابل ویرایش، خروجی واقعی و بررسی پاسخ</sub>
-</td>
-</tr>
-<tr>
-<td width="50%">
-<img src="docs/screenshots/py-04-quiz.png" alt="Quiz" width="100%"><br>
-<b>Ten-question quiz per topic</b><br>
-<sub>آزمون ۱۰ سؤالی برای هر مبحث</sub>
-</td>
-<td width="50%">
-<img src="docs/screenshots/py-05-dashboard.png" alt="Dashboard" width="100%"><br>
-<b>Progress dashboard with saved results</b><br>
-<sub>کارنامه با نتایج ذخیره‌شده</sub>
-</td>
-</tr>
-</table>
-
-</div>
-
-### 📚 مباحث &nbsp;|&nbsp; Topics
+**English:** 12 interactive, physics-based experiments, plus three working modes — Teacher, Discovery, and Measurement.
 
 | # | English | فارسی |
 |:-:|:--|:--|
-| ۱ | `print` and output | تابع print و چاپ خروجی |
-| ۲ | Variables | متغیرها (Variable) |
-| ۳ | Strings | رشته‌ها (str) |
-| ۴ | Integers | اعداد صحیح (int) |
-| ۵ | Type conversion | تبدیل نوع (Type Conversion) |
-| ۶ | `input` — reading user input | تابع input - گرفتن ورودی |
-| ۷ | Math operators and the `math` library | عملگرهای ریاضی و کتابخانه math |
-| ۸ | `if` / `elif` / `else` | عبارت شرطی if / elif / else |
-| ۹ | `while` loops | حلقه while |
-| ۱۰ | `for` loops and `range` | حلقه for و range |
-| ۱۱ | `len` and `range` | تابع len و range |
-| ۱۲ | `continue` and `break` | continue و break |
-| ۱۳ | Lists | لیست (List) |
-| ۱۴ | Lists with loops and conditions | ترکیب لیست با حلقه و شرط |
+| ۱ | Electric Charge | بار الکتریکی |
+| ۲ | Conservation & Quantization of Charge | پایستگی و کوانتیده بودن بار |
+| ۳ | Coulomb's Law | قانون کولن |
+| ۴ | Electric Field | میدان الکتریکی |
+| ۵ | Field of a Point Charge | میدان یک ذرهٔ باردار |
+| ۶ | Electric Field Lines | خطوط میدان الکتریکی |
+| ۷ | Electric Potential Energy | انرژی پتانسیل الکتریکی |
+| ۸ | Electric Potential | پتانسیل الکتریکی |
+| ۹ | Field Inside a Conductor | میدان الکتریکی درون رسانا |
+| ۱۰ | Capacitor | خازن |
+| ۱۱ | Capacitor with Dielectric | خازن با دی‌الکتریک |
+| ۱۲ | Capacitor Energy | انرژی خازن |
+
+- 🌐 **دو‌زبانه / Bilingual** — فارسی و انگلیسی، با تغییر جهت کامل (RTL/LTR) · Persian and English, with full RTL/LTR switching
+- 🌙 **پوستهٔ روشن و تیره / Light & dark themes**
+- 📊 **نمودارهای تعاملی زنده / Live interactive charts** — Recharts
+- 🧭 **سه حالت کاری / Three working modes** — معلم، خودت کشف کن، اندازه‌گیری · Teacher, Discovery, Measurement
+- 🔬 **شبیه‌سازی فیزیکی واقعی / Real physics** — از قانون کولن تا خازن با دی‌الکتریک<br>from Coulomb's law to capacitors with dielectrics
+- 📓 **دفترچهٔ ثبت داده (Data Logger)** برای اندازه‌گیری‌های تجربی · a Data Logger for experimental measurements
 
 ---
 
-# 🎓 دورهٔ پایتون مقدماتی &nbsp;|&nbsp; Python Basics Course
-
-<div align="center">
-
-### 👉 [https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-basics/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/python-basics/)
-
-<img src="docs/screenshots/pb-01-home.png" alt="Python Basics course home" width="100%">
-
-</div>
-
-**فارسی:** یک دورهٔ کامل و مستقل پایتون برای مبتدیان (پایهٔ دهم تا دوازدهم) به تدریس **فاطمه شمس**.
-شامل ۱۴ درس، ۴۲ مثال حل‌شده با خروجی، یک کارگاه کد زنده (پایتون واقعی با Pyodide)، ۱۴۰ سؤال آزمون (۱۰ سؤال برای هر درس)،
-آزمون جامع ۴۰ سؤالی، پاسخ‌نامهٔ تشریحی و کارنامهٔ قابل چاپ. زبان پیش‌فرض انگلیسی است و از نوار بالا به فارسی (کاملاً راست‌به‌چپ) تغییر می‌کند.
-
-**English:** A complete, self-contained beginner Python course (grades 10–12) taught by **Fatemeh Shams**.
-It has 14 lessons, 42 worked examples with expected output, a live code playground (real Python via Pyodide),
-140 quiz questions (10 per lesson), a 40-question random final exam, an answer key with explanations, and a printable report card.
-The default language is English, switchable to Persian (full RTL) from the top bar.
-
-<div align="center">
-
-<table>
-<tr>
-<td width="50%">
-<img src="docs/screenshots/pb-02-lesson.png" alt="Lesson view" width="100%"><br>
-<b>Each lesson — idea, syntax and worked code</b><br>
-<sub>هر درس — ایده، سینتکس و کد نمونه</sub>
-</td>
-<td width="50%">
-<img src="docs/screenshots/pb-03-playground.png" alt="Code playground" width="100%"><br>
-<b>Playground — edit and run real Python</b><br>
-<sub>کارگاه کد — ویرایش و اجرای پایتون واقعی</sub>
-</td>
-</tr>
-<tr>
-<td width="50%">
-<img src="docs/screenshots/pb-04-quiz.png" alt="Lesson quiz" width="100%"><br>
-<b>Ten-question quiz with an answer key</b><br>
-<sub>آزمون ۱۰ سؤالی همراه با پاسخ‌نامه</sub>
-</td>
-<td width="50%">
-<img src="docs/screenshots/pb-05-report.png" alt="Report card" width="100%"><br>
-<b>Printable report card with per-topic scores</b><br>
-<sub>کارنامهٔ قابل چاپ با نمرهٔ هر مبحث</sub>
-</td>
-</tr>
-<tr>
-<td colspan="2" align="center">
-<img src="docs/screenshots/pb-06-fa-dark.png" alt="Persian, right-to-left, dark theme" width="100%"><br>
-<b>Full Persian (RTL) interface and a dark theme</b><br>
-<sub>رابط کاملاً فارسی و راست‌به‌چپ به همراه پوستهٔ تیره</sub>
-</td>
-</tr>
-</table>
-
-</div>
-
-> **فارسی:** درس‌ها، مثال‌ها، آزمون‌ها و کارنامه بدون اینترنت کار می‌کنند؛ فقط دکمهٔ «اجرا» بار اول برای بارگذاری موتور پایتون به اینترنت نیاز دارد.
-> **English:** Lessons, examples, quizzes and the report card work offline; only the **Run** button needs the internet once, to load the Python engine from a CDN.
-
----
-
-## ✨ ویژگی‌های مشترک &nbsp;|&nbsp; Shared Features
-
-| | English | فارسی |
-|:-:|:--|:--|
-| 🌐 | Runs fully in the browser — nothing to install | کاملاً در مرورگر اجرا می‌شود — بدون نصب |
-| 📝 | Quizzes with a worked explanation for every answer | آزمون با پاسخ تشریحی برای هر سؤال |
-| 🧾 | Progress and report cards saved on your own device | پیشرفت و کارنامه روی دستگاه خودتان ذخیره می‌شود |
-| 🔒 | No account, no server, no data leaves your browser | بدون حساب کاربری و بدون سرور؛ داده‌ای از مرورگر خارج نمی‌شود |
-| 📱 | Responsive — works on tablet and desktop | واکنش‌گرا — روی تبلت و دسکتاپ کار می‌کند |
-| ↔️ | Fully right-to-left Persian interface | رابط کاربری کاملاً راست‌به‌چپ و فارسی |
-
----
-
-## 🗂️ ساختار مخزن &nbsp;|&nbsp; Repository Layout
+## 🗂️ ساختار این برنچ &nbsp;|&nbsp; Branch layout
 
 | مسیر / Path | توضیح / Description |
 |:--|:--|
-| `index.html` | صفحهٔ ویترین با دکمهٔ هر شبیه‌ساز — Showcase page linking to the simulators |
-| `python-lab/` | شبیه‌ساز پایتون — the Python course |
-| `python-basics/` | دورهٔ پایتون مقدماتی (فاطمه شمس) — the Python Basics course |
-| `docs/screenshots/` | تصاویر همین راهنما — images used in this README |
-
-> شبیه‌ساز ریاضی چهارم دبستان (`lab/`، `simulator-src/`، `simulator.html`) روی برنچ `math-lab-grade4` قرار دارد.
-> The grade-4 math lab (`lab/`, `simulator-src/`, `simulator.html`) is kept on the `math-lab-grade4` branch.
-
-این مخزن **ویترین** پروژه‌هاست: لینک دسترسی به شبیه‌سازها آزاد و عمومی است، اما سورس‌کد شبیه‌ساز پایتون در این مخزن منتشر نشده است.
-
-*This repository is a **showcase**: the simulators are free to open and use, but the Python simulator's source code is not published here.*
+| `index.html` | نسخهٔ بیلد‌شده و خودکفا با قفل رمز — prebuilt, self-contained, gated app |
+| `eslab-src/` | سورس کامل (React + Vite + TypeScript) — full source |
+| `eslab-src/src/Gate.tsx` | کامپوننت قفل رمز — the password gate component |
+| `eslab-src/src/experiments/` | ۱۲ آزمایش — the 12 experiments |
+| `eslab-src/src/modes/` | حالت‌های معلم، کشف و اندازه‌گیری — Teacher, Discovery, Measurement modes |
+| `eslab-src/src/physics/core.ts` | موتور محاسبات فیزیکی — the physics computation engine |
 
 ---
 
@@ -215,5 +119,5 @@ Released under the license in [LICENSE](LICENSE).
 
 <div align="center">
 <br>
-<sub>ساخته شده برای دانش‌آموزان و معلمان &nbsp;·&nbsp; Built for students and teachers</sub>
+<sub>ساخته شده برای پژوهش و آموزش &nbsp;·&nbsp; Built for research and teaching</sub>
 </div>
