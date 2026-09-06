@@ -36,8 +36,8 @@
 
 </div>
 
-> **🔬 آزمایشگاه مجازی ریاضی (چهارم دبستان)** روی برنچ جداگانهٔ [`math-lab-grade4`](https://github.com/Fatemeh1203/Smart-Simulators-ShowCase/tree/math-lab-grade4) نگه‌داری می‌شود.
-> The **Virtual Math Lab (Grade 4)** now lives on its own [`math-lab-grade4`](https://github.com/Fatemeh1203/Smart-Simulators-ShowCase/tree/math-lab-grade4) branch.
+> **🔬 آزمایشگاه مجازی ریاضی (چهارم دبستان)** روی برنچ جداگانهٔ [`math-lab-grade4`](https://github.com/Fatemeh1203/Smart-Simulators-ShowCase/tree/math-lab-grade4) نگه‌داری می‌شود و روی GitHub Pages در آدرس **[/math-lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/math-lab/)** منتشر شده (رمز: `project`).
+> The **Virtual Math Lab (Grade 4)** lives on its own [`math-lab-grade4`](https://github.com/Fatemeh1203/Smart-Simulators-ShowCase/tree/math-lab-grade4) branch and is published on GitHub Pages at **[/math-lab/](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/math-lab/)** (password: `project`).
 
 > **فارسی:** ابتدا [صفحهٔ ویترین](https://fatemeh1203.github.io/Smart-Simulators-ShowCase/) را باز کنید، سپس روی دکمهٔ شبیه‌ساز دلخواه کلیک کنید.
 > یا با لینک‌های جدول بالا مستقیم وارد همان شبیه‌ساز شوید.
